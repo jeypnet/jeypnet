@@ -2,7 +2,7 @@
 
 **Customer Success & Account Management | SaaS | AI | Enterprise Technology**
 
-Austin, TX · Bilingual English/Spanish · [LinkedIn](https://linkedin.com/in/jeypnet) · jp@jeyp.net
+Austin, TX · Bilingual English/Spanish · [LinkedIn](https://linkedin.com/in/jeypnet) ·
 
 ---
 
