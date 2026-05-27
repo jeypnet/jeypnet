@@ -1,7 +1,4 @@
 **Customer Success & Account Management | AI Agentic Workflows | SaaS**
-
-[LinkedIn](https://linkedin.com/in/jeypnet)
-
 ---
 
 ## What I Care About
