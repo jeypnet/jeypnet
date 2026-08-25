@@ -1,64 +1,72 @@
-**Customer Success & Account Management | AI Agentic Workflows | SaaS**
----
+## I build AI agents, MCP servers, and LLM-powered automation.
 
-## What I Care About
+Most of what I ship is agent shaped. A model, a set of tools I wrote for it, and a real system on the other end that is not allowed to break.
 
-I'm a Customer Success and Account Management professional in enterprise SaaS. The part of the job I love is the human part: face-to-face meetings, QBRs, listening to a lead figure out what they actually need, walking an account through a renewal conversation.
+The interesting work is never the prompt. It is the tool schema an LLM can actually use without guessing, the sanitizing on anything that flows back into a model's context, the fallback path for when the API is down, and the logging that lets you prove what the agent did after it did it.
 
-Everything else, I want automated. The repos here are the tools I lean on to clear busywork off my plate so I get more time with leads, customers, and accounts. Health scoring, re-engagement nudges, onboarding follow-ups, dashboard pulls, meeting prep, anything an AI agent can handle, I hand it over.
-
-That mindset is how I work as a CSM/AM at [JoGo.Team](https://jogo.team), a two-sided SaaS marketplace with 1,000+ users across the US, Europe, the Middle East, and Latin America, and how I run Fortune 500 enterprise AI accounts at BP3 Global today.
+I am a Customer Success Manager at [JoGo.Team](https://jogo.team), and I build the platform's AI layer.
 
 ---
 
-## Featured Projects
+## Live proof: the JoGo.Team MCP server
 
-### 📲 [twilio-whatsapp-reengagement](https://github.com/jeypnet/twilio-whatsapp-reengagement)
+I wrote and run the Model Context Protocol server that lets any AI assistant find and book pickup soccer through JoGo.Team. It is public. You can call it right now, from your own terminal, without a key:
 
-Re-engagement workflow using Twilio SMS and WhatsApp APIs to spot at-risk users from health scoring signals and reopen the conversation automatically. I use it in my CSM work to keep dormant accounts from going cold. 80%+ reactivation in practice.
+```bash
+curl -s -X POST https://jogo.team/mcp \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+```
 
-`Python` `Twilio` `WhatsApp API` `Customer Health Scoring` `Automation`
+What comes back:
 
----
+- **MCP protocol `2025-06-18`**, advertising tools, prompts, and resources
+- **5 tools**: `search_cities`, `list_games`, `get_venue`, `get_platform_overview`, `host_a_game`
+- **3 prompts** plus a `jogo://about` resource for positioning context
+- Tool descriptions written for the model, not for a human. They tell the assistant when to reach for the tool instead of falling back to web search, and they state plainly that a game not returned by the call must never be advertised as available.
 
-## Core Skills
+Beyond the read-only surface it also carries authenticated write tools for hosts, off by default and scoped per host, so an assistant can draft and publish a real game. Every tool call is logged so adoption is measurable rather than assumed.
 
-**Customer Success & Account Management**
-- Onboarding & Adoption
-- Churn Mitigation
-- QBR Facilitation
-- Renewal & Expansion
-- Account Health Monitoring
-
-**AI & Agentic Automation**
-- Agentic AI workflows (Claude Code, MCP servers)
-- OpenAI / Anthropic APIs
-- Python
-- Playwright (browser automation)
-- Twilio (SMS + WhatsApp)
-- Cloudflare WAF/DNS/CDN
-
-**Tools**
-- Salesforce / HubSpot
-- Gainsight-style health scoring
-- Outreach.io / Sales Navigator
-- UiPath / Camunda / Pega
-- Google Analytics / Klaviyo
+Building it taught me the things you only learn by shipping an agent surface to strangers: models will call your tool with the wrong shape, they will happily invent a city you do not serve, and anything you hand back becomes context you no longer control.
 
 ---
 
-## Background
+## What is here
 
-- 🏢 **BP3 Global** - Senior Sales Executive, Enterprise AI & Automation (Fortune 500 accounts)
-- 🏢 **JoGo.Team** - Customer Success / Account Manager (sole CSM/AM, 1,000+ users on 4 continents)
-- 🏢 **Konica Minolta** - Sales Executive, Renewals & Expansion (100+ public-sector accounts)
-- 🏢 **FlexRadio Systems** - Sales Manager, SDR Communications ($4M quota, 80%+ win rate)
-- 📡 **Motorola BGH** - Lab Technician, first iDEN certified technician in LATAM
+| Repo | What it is |
+|---|---|
+| [csm-account-intelligence](https://github.com/jeypnet/csm-account-intelligence) | Churn-risk scoring plus QBR briefs generated through the OpenAI API, with a deterministic fallback so it still runs with no key. Ships a customer-facing PDF report. Synthetic sample data. |
+| [twilio-whatsapp-reengagement](https://github.com/jeypnet/twilio-whatsapp-reengagement) | Retention automation that scores engagement health, flags at-risk users, and fires personalized Twilio SMS and WhatsApp messages. Reactivated 80%+ of dormant users in production. |
+| [flexradio-smartsdr-client](https://github.com/jeypnet/flexradio-smartsdr-client) | Python client for the FlexRadio SmartSDR TCP/IP API. UDP discovery, slice tuning, live SWR and power meters, streaming callbacks. |
+| [hf-propagation-checker](https://github.com/jeypnet/hf-propagation-checker) | Live radio propagation scoring off the NOAA space weather APIs. No keys, no paid services. |
 
 ---
 
-## Certifications
+## What I work with
 
-- 🎓 Bachelor of Engineering, UTN FRBA, Argentina
-- 📡 Ham Radio License, Extra Class
-- 📧 Klaviyo Certified
+**AI and agents**
+Model Context Protocol (MCP) servers and clients, tool and schema design, Claude Code, Anthropic and OpenAI APIs, prompt engineering, multi-agent orchestration, browser-driving agents, scheduled autonomous loops, human in the loop review
+
+**Building and shipping**
+Python, Django on Render, REST and JSON-RPC API integration, Stripe Connect, Twilio SMS and WhatsApp Business API, SendGrid, Cloudflare WAF and DNS and CDN, GitHub Actions, Sentry, Supabase, pytest
+
+**Measuring**
+GA4 Data API, Google Search Console, customer health scoring, churn signal detection
+
+---
+
+## Before this
+
+I came to AI engineering from customer-facing technical roles, which is why I build agents that have to survive contact with real users rather than demos.
+
+- **BP3 Global**, Senior Enterprise Sales Executive. I worked Fortune 500 accounts in banking and manufacturing across AI and automation.
+- **Konica Minolta**, Sales Executive. Public sector accounts, cloud document and AI security platforms.
+- **FlexRadio Systems**, Sales Manager. Software-defined radio into defense, utilities, and emergency response.
+- **Motorola BGH**, Lab Technician. First iDEN certified technician in Latin America.
+
+Bachelor of Engineering, UTN FRBA, Argentina. FCC Extra Class amateur radio license. Bilingual English and Spanish.
+
+---
+
+Open to remote AI Developer, AI Solutions Developer, and AI Solutions Engineer roles.
+[LinkedIn](https://www.linkedin.com/in/jeypnet/)
