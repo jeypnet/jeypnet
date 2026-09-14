@@ -1,72 +1,43 @@
-## I build AI agents, MCP servers, and LLM-powered automation.
+# JP Pacheco | AI-native builder
 
-Most of what I ship is agent shaped. A model, a set of tools I wrote for it, and a real system on the other end that is not allowed to break.
+I turn customer and operational problems into AI integrations, automation, and working tools. My focus is **AI solutions engineering**: understand the workflow, design the solution, build with AI coding agents, test it, and own its operation.
 
-The interesting work is never the prompt. It is the tool schema an LLM can actually use without guessing, the sanitizing on anything that flows back into a model's context, the fallback path for when the API is down, and the logging that lets you prove what the agent did after it did it.
+At [JoGo.Team](https://jogo.team), I build AI capabilities for a sports marketplace. My background in customer success, technical sales, and radio systems helps me connect business needs with implementation and explain the tradeoffs to the people using it.
 
-I am a Customer Success Manager at [JoGo.Team](https://jogo.team), and I build the platform's AI layer.
+**Open to remote AI Solutions Engineer, AI Solutions Implementation, and AI Automation roles.** [Connect on LinkedIn](https://www.linkedin.com/in/jeypnet/).
 
----
+## Start here: problems I solve
 
-## Live proof: the JoGo.Team MCP server
+| Area | Project and evidence | What it demonstrates |
+|---|---|---|
+| AI + sports marketplace | [JoGo MCP case study](case-studies/jogo-mcp.md) | Connecting assistants to a real platform through structured tools |
+| Customer operations + SaaS | [Account intelligence](https://github.com/jeypnet/csm-account-intelligence) · [sample report](https://github.com/jeypnet/csm-account-intelligence/blob/main/A002_Cascade_Logistics_HealthReport.pdf) | Risk prioritization, optional LLM briefs, and customer-facing reporting using synthetic accounts |
+| Retention + lifecycle automation | [SMS / WhatsApp re-engagement](https://github.com/jeypnet/twilio-whatsapp-reengagement) | Engagement scoring and channel selection, with a no-send demonstration |
+| Radio + hardware integration | [SmartSDR client](https://github.com/jeypnet/flexradio-smartsdr-client) | Network discovery, device commands, and asynchronous status callbacks |
+| Radio + external data | [HF propagation checker](https://github.com/jeypnet/hf-propagation-checker) | Translating space-weather inputs into an explainable band-scoring heuristic |
+| AI products + technical demonstrations | [Quest demos](https://github.com/jeypnet/Quest-Demos) | Evaluating Figma-to-React output and explaining integration tradeoffs to technical buyers |
 
-I wrote and run the Model Context Protocol server that lets any AI assistant find and book pickup soccer through JoGo.Team. It is public. You can call it right now, from your own terminal, without a key:
+The repositories include demonstration code and technical utilities. Each README explains its scope and how to inspect it. Synthetic industry examples are not client references; employer experience does not imply deployment of these public projects at those employers or their customers.
 
-```bash
-curl -s -X POST https://jogo.team/mcp \
-  -H "Content-Type: application/json" \
-  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
-```
+## How I build
 
-What comes back:
+I use an AI-native development process. AI coding agents help produce the code; I own the problem definition, solution design, review, testing, troubleshooting, and completed workflow. Quest's repository explicitly identifies its generated platform output.
 
-- **MCP protocol `2025-06-18`**, advertising tools, prompts, and resources
-- **5 tools**: `search_cities`, `list_games`, `get_venue`, `get_platform_overview`, `host_a_game`
-- **3 prompts** plus a `jogo://about` resource for positioning context
-- Tool descriptions written for the model, not for a human. They tell the assistant when to reach for the tool instead of falling back to web search, and they state plainly that a game not returned by the call must never be advertised as available.
+- **Discover and explain:** connect customer requirements to a practical workflow, demonstrate the result, and discuss limitations.
+- **Integrate:** work with MCP, REST APIs, webhooks, messaging services, and operational data.
+- **Operate and improve:** investigate failures, evaluate fallback behavior, and use customer feedback and analytics to guide the next change.
 
-Beyond the read-only surface it also carries authenticated write tools for hosts, off by default and scoped per host, so an assistant can draft and publish a real game. Every tool call is logged so adoption is measurable rather than assumed.
+Tools across my work include Claude Code, MCP, Anthropic and OpenAI APIs, Python/Django, Twilio, Stripe Connect, SendGrid, Cloudflare, GitHub Actions, Sentry, GA4, and Google Search Console. The projects above show specific slices of that work, not a claim that every tool is implemented in every repository.
 
-Building it taught me the things you only learn by shipping an agent surface to strangers: models will call your tool with the wrong shape, they will happily invent a city you do not serve, and anything you hand back becomes context you no longer control.
+## Industry experience behind the projects
 
----
+- **JoGo.Team:** customer operations and AI integration for a sports marketplace.
+- **BP3 Global:** enterprise AI and automation sales across banking and manufacturing.
+- **Konica Minolta:** public-sector accounts, document workflows, and AI security platforms.
+- **FlexRadio Systems:** customer-facing work with software-defined radio across defense, utilities, and emergency response.
+- **Quest:** demonstrations of an AI design-to-code product for enterprise buyers.
+- **Motorola BGH:** hands-on radio and electronics support.
 
-## What is here
+Engineering education at UTN FRBA, Extra Class amateur radio background, and bilingual English / Spanish communication inform how I approach technical problems.
 
-| Repo | What it is |
-|---|---|
-| [csm-account-intelligence](https://github.com/jeypnet/csm-account-intelligence) | Churn-risk scoring plus QBR briefs generated through the OpenAI API, with a deterministic fallback so it still runs with no key. Ships a customer-facing PDF report. Synthetic sample data. |
-| [twilio-whatsapp-reengagement](https://github.com/jeypnet/twilio-whatsapp-reengagement) | Retention automation that scores engagement health, flags at-risk users, and fires personalized Twilio SMS and WhatsApp messages. Reactivated 80%+ of dormant users in production. |
-| [flexradio-smartsdr-client](https://github.com/jeypnet/flexradio-smartsdr-client) | Python client for the FlexRadio SmartSDR TCP/IP API. UDP discovery, slice tuning, live SWR and power meters, streaming callbacks. |
-| [hf-propagation-checker](https://github.com/jeypnet/hf-propagation-checker) | Live radio propagation scoring off the NOAA space weather APIs. No keys, no paid services. |
-
----
-
-## What I work with
-
-**AI and agents**
-Model Context Protocol (MCP) servers and clients, tool and schema design, Claude Code, Anthropic and OpenAI APIs, prompt engineering, multi-agent orchestration, browser-driving agents, scheduled autonomous loops, human in the loop review
-
-**Building and shipping**
-Python, Django on Render, REST and JSON-RPC API integration, Stripe Connect, Twilio SMS and WhatsApp Business API, SendGrid, Cloudflare WAF and DNS and CDN, GitHub Actions, Sentry, Supabase, pytest
-
-**Measuring**
-GA4 Data API, Google Search Console, customer health scoring, churn signal detection
-
----
-
-## Before this
-
-I came to AI engineering from customer-facing technical roles, which is why I build agents that have to survive contact with real users rather than demos.
-
-- **BP3 Global**, Senior Enterprise Sales Executive. I worked Fortune 500 accounts in banking and manufacturing across AI and automation.
-- **Konica Minolta**, Sales Executive. Public sector accounts, cloud document and AI security platforms.
-- **FlexRadio Systems**, Sales Manager. Software-defined radio into defense, utilities, and emergency response.
-- **Motorola BGH**, Lab Technician. First iDEN certified technician in Latin America.
-
-Bachelor of Engineering, UTN FRBA, Argentina. FCC Extra Class amateur radio license. Bilingual English and Spanish.
-
----
-
-Open to remote AI Developer, AI Solutions Developer, and AI Solutions Engineer roles.
-[LinkedIn](https://www.linkedin.com/in/jeypnet/)
+[LinkedIn](https://www.linkedin.com/in/jeypnet/) · [Browse the projects](https://github.com/jeypnet?tab=repositories)
