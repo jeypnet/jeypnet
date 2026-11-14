@@ -14,6 +14,14 @@ At [JoGo.Team](https://jogo.team), I build AI capabilities for a sports marketpl
 
 ## Start here: problems I solve
 
+<table>
+<tr>
+<td width="33%"><a href="https://github.com/jeypnet/csm-account-intelligence"><img src="https://github.com/jeypnet/csm-account-intelligence/raw/main/docs/cover.png" alt="Customer Account Intelligence"></a><br><b>Customer success AI</b><br><sub>Account health, churn risk, AI QBR briefs</sub></td>
+<td width="33%"><a href="https://github.com/jeypnet/twilio-whatsapp-reengagement"><img src="https://github.com/jeypnet/twilio-whatsapp-reengagement/raw/main/docs/cover.png" alt="Customer Win-Back"></a><br><b>Lifecycle marketing automation</b><br><sub>Engagement scoring, SMS and WhatsApp win-back</sub></td>
+<td width="33%"><a href="https://github.com/jeypnet/Quest-Demos"><img src="https://github.com/jeypnet/Quest-Demos/raw/main/docs/cover.png" alt="AI Design-to-Code Demo"></a><br><b>AI sales engineering</b><br><sub>Design-to-code demo for technical buyers</sub></td>
+</tr>
+</table>
+
 | Area | Project and evidence | What it demonstrates |
 |---|---|---|
 | AI + sports marketplace | [JoGo MCP case study](case-studies/jogo-mcp.md) | Connecting assistants to a real platform through structured tools |
