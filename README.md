@@ -1,6 +1,6 @@
 # JP Pacheco | AI-native builder
 
-I turn customer and operational problems into AI integrations, automation, and working tools. My focus is **AI solutions engineering**: understand the workflow, design the solution, build with AI coding agents, test it, and own its operation.
+I turn customer and operational problems into AI integrations, automation, and working tools. My focus is **AI solutions engineering**: understand the workflow, design the solution, build with AI coding agents, test it, and own its operation. I also build **RF + AI** software: software-defined radio apps with on-device machine learning for drone detection, GPS interference, SCADA radio links, spectrum monitoring and signal classification.
 
 At [JoGo.Team](https://jogo.team), I build AI capabilities for a sports marketplace. My background in customer success, technical sales, and radio systems helps me connect business needs with implementation and explain the tradeoffs to the people using it.
 
@@ -19,6 +19,36 @@ At [JoGo.Team](https://jogo.team), I build AI capabilities for a sports marketpl
 
 The repositories include demonstration code and technical utilities. Each README explains its scope and how to inspect it. Synthetic industry examples are not client references; employer experience does not imply deployment of these public projects at those employers or their customers.
 
+## RF + AI: software-defined radio projects
+
+Windows apps that turn a low-cost RTL-SDR into a sensor, with **machine learning trained in PyTorch and run on-device with ONNX Runtime** in C# / .NET. Each one is receive-only and ships with a model card that reports measured results against a classical baseline.
+
+<table>
+<tr>
+<td width="50%"><a href="https://github.com/jeypnet/KG5ZZB-Drone-RF-Detector"><img src="https://github.com/jeypnet/KG5ZZB-Drone-RF-Detector/raw/main/docs/cover.png" alt="Drone RF Detector"></a></td>
+<td width="50%"><a href="https://github.com/jeypnet/KG5ZZB-GNSS-Interference-Monitor"><img src="https://github.com/jeypnet/KG5ZZB-GNSS-Interference-Monitor/raw/main/docs/cover.png" alt="GNSS Interference Monitor"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jeypnet/KG5ZZB-SCADA-RF-Link-Monitor"><img src="https://github.com/jeypnet/KG5ZZB-SCADA-RF-Link-Monitor/raw/main/docs/cover.png" alt="SCADA RF Link Monitor"></a></td>
+<td><a href="https://github.com/jeypnet/KG5ZZB-RF-Signal-Classifier"><img src="https://github.com/jeypnet/KG5ZZB-RF-Signal-Classifier/raw/main/docs/cover.png" alt="RF Signal Classifier"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jeypnet/KG5ZZB-Spectrum-Anomaly-Detector"><img src="https://github.com/jeypnet/KG5ZZB-Spectrum-Anomaly-Detector/raw/main/docs/cover.png" alt="Spectrum Anomaly Detector"></a></td>
+<td><a href="https://github.com/jeypnet/KG5ZZB-IoT-RF-Inventory"><img src="https://github.com/jeypnet/KG5ZZB-IoT-RF-Inventory/raw/main/docs/cover.png" alt="IoT RF Inventory"></a></td>
+</tr>
+</table>
+
+| Project | Industry | What it does | Measured result |
+|---|---|---|---|
+| [Drone RF Detector](https://github.com/jeypnet/KG5ZZB-Drone-RF-Detector) | Counter-UAS, critical infrastructure | Neural network classifies 900 MHz RF bursts; frequency-hopping and site-baseline alert logic; FAA Remote ID (ASTM F3411) over Bluetooth | 96.4% accuracy vs 66.1% for rules |
+| [GNSS Interference Monitor](https://github.com/jeypnet/KG5ZZB-GNSS-Interference-Monitor) | Aviation, PNT, defense | Maps GPS degradation from ADS-B NACp/NIC, estimates the jammer location, CNN classifies GPS L1 jammer types | 99.2% vs 73.0% for rules |
+| [SCADA RF Link Monitor](https://github.com/jeypnet/KG5ZZB-SCADA-RF-Link-Monitor) | Energy, oil & gas, utilities (OT) | Radio link health for RTU telemetry; autoencoder anomaly detection; MQTT and Modbus TCP outputs for SCADA/Ignition | F1 0.82 vs 0.67 for thresholds |
+| [RF Signal Classifier](https://github.com/jeypnet/KG5ZZB-RF-Signal-Classifier) | RF machine learning, spectrum | 1-D CNN names 14 modulations from raw IQ; Python/C# preprocessing parity; SigMF recording | 90.2% at SNR ≥ 10 dB |
+| [Spectrum Anomaly Detector](https://github.com/jeypnet/KG5ZZB-Spectrum-Anomaly-Detector) | Spectrum monitoring, telecom | Time-of-day baseline + autoencoder flag new, missing and interfering signals from 24 MHz to 1.7 GHz | 90.3% recall at 0.1% false alarms |
+| [IoT RF Inventory](https://github.com/jeypnet/KG5ZZB-IoT-RF-Inventory) | IoT, physical/RF security | Demodulates OOK/FSK sub-GHz devices, classifies modulation, DBSCAN fingerprinting, new-device alerts | 97.6% vs 69.7% for rules |
+
+Also: [KG5ZZB SDR Airband Receiver](https://github.com/jeypnet/KG5ZZB-SDR-Airband-Receiver), an aircraft radio scanner and ADS-B map for an RTL-SDR. The RF + AI repositories are project showcases (description, results, model card); the source code is private and technical walkthroughs are available on request.
+
 ## How I build
 
 I use an AI-native development process. AI coding agents help produce the code; I own the problem definition, solution design, review, testing, troubleshooting, and completed workflow. Quest's repository explicitly identifies its generated platform output.
@@ -27,7 +57,7 @@ I use an AI-native development process. AI coding agents help produce the code; 
 - **Integrate:** work with MCP, REST APIs, webhooks, messaging services, and operational data.
 - **Operate and improve:** investigate failures, evaluate fallback behavior, and use customer feedback and analytics to guide the next change.
 
-Tools across my work include Claude Code, MCP, Anthropic and OpenAI APIs, Python/Django, Twilio, Stripe Connect, SendGrid, Cloudflare, GitHub Actions, Sentry, GA4, and Google Search Console. The projects above show specific slices of that work, not a claim that every tool is implemented in every repository.
+Tools across my work include Claude Code, MCP, PyTorch, ONNX Runtime, C# / .NET (WPF), DSP and RTL-SDR, Anthropic and OpenAI APIs, Python/Django, Twilio, Stripe Connect, SendGrid, Cloudflare, GitHub Actions, Sentry, GA4, and Google Search Console. The projects above show specific slices of that work, not a claim that every tool is implemented in every repository.
 
 ## Industry experience behind the projects
 
