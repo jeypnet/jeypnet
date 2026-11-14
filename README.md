@@ -31,6 +31,19 @@ At [JoGo.Team](https://jogo.team), I build AI capabilities for a sports marketpl
 
 The repositories include demonstration code and technical utilities. Each README explains its scope and how to inspect it. Synthetic industry examples are not client references; employer experience does not imply deployment of these public projects at those employers or their customers.
 
+## ✈ Flagship RF project: KG5ZZB SDR Airband Receiver
+
+<p align="center"><a href="https://github.com/jeypnet/KG5ZZB-Radio-Apps"><img src="assets/airband-receiver-hero-v1.png" alt="KG5ZZB SDR Airband Receiver: hear pilots, see the planes, read their messages, with an RTL-SDR dongle" width="100%"></a></p>
+
+A complete aviation radio app for a low-cost RTL-SDR dongle, built end to end in C# / .NET: **an airband scanner with an AI noise filter, a live map of the planes around you from their ADS-B transponders, and the ACARS / VDL2 messages they send, explained in plain English.** It runs offline, from your own antenna.
+
+- **Own RTL-SDR driver** (USB, tuner and PLL control in C#): the scanner checks every channel [almost twice as often as with the free driver](https://github.com/jeypnet/KG5ZZB-Radio-Apps/blob/main/docs/airband-driver.md), with 1000 retunes in a row and no errors.
+- **Own decoders**: ADS-B, ACARS and VDL Mode 2 (D8PSK, Reed–Solomon), all in the app.
+- **AI noise filter** (RNNoise) for weak voices, and **plug and play with two receivers**: the app finds which one hears planes and gives it the map.
+- RTL-SDR, SDRplay and Airspy receivers · Windows, Mac and Linux.
+
+**[⬇ Download (Windows, free 30-day trial)](https://github.com/jeypnet/KG5ZZB-Radio-Apps/releases/latest)** · **[Mac & Linux BETA](https://github.com/jeypnet/KG5ZZB-Radio-Apps#-downloads-for-every-system)** · **[How it works and measured results](https://github.com/jeypnet/KG5ZZB-Radio-Apps)**
+
 ## RF + AI: software-defined radio projects
 
 Windows apps that turn a low-cost RTL-SDR into a sensor, with **machine learning trained in PyTorch and run on-device with ONNX Runtime** in C# / .NET. Each one is receive-only and ships with a model card that reports measured results against a classical baseline.
@@ -59,7 +72,7 @@ Windows apps that turn a low-cost RTL-SDR into a sensor, with **machine learning
 | [Spectrum Anomaly Detector](https://github.com/jeypnet/KG5ZZB-Spectrum-Anomaly-Detector) | Spectrum monitoring, telecom | Time-of-day baseline + autoencoder flag new, missing and interfering signals from 24 MHz to 1.7 GHz | 90.3% recall at 0.1% false alarms |
 | [IoT RF Inventory](https://github.com/jeypnet/KG5ZZB-IoT-RF-Inventory) | IoT, physical/RF security | Demodulates OOK/FSK sub-GHz devices, classifies modulation, DBSCAN fingerprinting, new-device alerts | 97.6% vs 69.7% for rules |
 
-Also: [KG5ZZB SDR Airband Receiver](https://github.com/jeypnet/KG5ZZB-SDR-Airband-Receiver), an aircraft radio scanner and ADS-B map for an RTL-SDR. The RF + AI repositories are project showcases (description, results, model card); the source code is private and technical walkthroughs are available on request.
+The RF + AI repositories are project showcases (description, results, model card); the source code is private and technical walkthroughs are available on request.
 
 ## How I build
 
