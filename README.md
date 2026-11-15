@@ -42,7 +42,7 @@ A complete aviation radio app for a low-cost RTL-SDR dongle, built end to end in
 - **AI noise filter** (RNNoise) for weak voices, and **plug and play with two receivers**: the app finds which one hears planes and gives it the map.
 - RTL-SDR, SDRplay and Airspy receivers · Windows, Mac and Linux.
 
-**[⬇ Download (Windows, free 30-day trial)](https://github.com/jeypnet/KG5ZZB-Radio-Apps/releases/latest)** · **[Mac & Linux BETA](https://github.com/jeypnet/KG5ZZB-Radio-Apps#-downloads-for-every-system)** · **[How it works and measured results](https://github.com/jeypnet/KG5ZZB-Radio-Apps)**
+**[⬇ Download free (Windows)](https://github.com/jeypnet/KG5ZZB-Radio-Apps/releases/latest)** · **[Mac & Linux](https://github.com/jeypnet/KG5ZZB-Radio-Apps#-downloads-for-every-system)** · **[How it works and measured results](https://github.com/jeypnet/KG5ZZB-Radio-Apps)**
 
 ## RF + AI: software-defined radio projects
 
