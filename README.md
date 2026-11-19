@@ -1,4 +1,4 @@
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg"><img src="assets/hero-dark.svg" alt="Juan Pablo Pacheco: AI Solutions Engineer. AI agents, MCP and LLM integrations, workflow automation, and RF + AI software-defined radio with on-device machine learning" width="100%"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/hero-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/hero-light.svg"><img src="assets/portfolio-v2/hero-dark.svg" alt="Juan Pablo Pacheco — AI Solutions Engineer, AI agents, automation and RF + AI" width="100%"></picture></p>
 
 <p><img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white"> <img alt="MCP" src="https://img.shields.io/badge/MCP-111827?style=flat-square"> <img alt="LLM APIs" src="https://img.shields.io/badge/LLM%20APIs-6B21A8?style=flat-square"> <img alt="AI Agents" src="https://img.shields.io/badge/AI%20Agents-0E7490?style=flat-square"> <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"> <img alt="ONNX Runtime" src="https://img.shields.io/badge/ONNX%20Runtime-005CED?style=flat-square&logo=onnx&logoColor=white"> <img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white"> <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white"> <img alt="Django" src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"> <img alt="Twilio" src="https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white"> <img alt="Stripe" src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white"> <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white"> <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"> <img alt="SDR / RF" src="https://img.shields.io/badge/SDR%20/%20RF-0F766E?style=flat-square"> <img alt="DSP" src="https://img.shields.io/badge/DSP-334155?style=flat-square"></p>
 
@@ -13,6 +13,10 @@ At [JoGo.Team](https://jogo.team), I build AI capabilities for a sports marketpl
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg"><img src="assets/divider-dark.svg" alt="" width="100%"></picture></p>
 
 ## Start here: problems I solve
+
+<table><tr><td width="33%" align="center"><a href="https://github.com/jeypnet/csm-account-intelligence"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/account-intelligence-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/account-intelligence-light.svg"><img src="assets/portfolio-v2/account-intelligence-dark.svg" alt="Customer success AI" width="100%"></picture></a></td>
+<td width="33%" align="center"><a href="https://github.com/jeypnet/twilio-whatsapp-reengagement"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/reengagement-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/reengagement-light.svg"><img src="assets/portfolio-v2/reengagement-dark.svg" alt="Lifecycle automation" width="100%"></picture></a></td>
+<td width="33%" align="center"><a href="https://github.com/jeypnet/Quest-Demos"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/sales-engineering-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/sales-engineering-light.svg"><img src="assets/portfolio-v2/sales-engineering-dark.svg" alt="AI sales engineering" width="100%"></picture></a></td></tr></table>
 
 <table>
 <tr>
@@ -37,6 +41,8 @@ The repositories include demonstration code and technical utilities. Each README
 
 ## ✈ Flagship RF project: KG5ZZB SDR Airband Receiver
 
+<p align="center"><a href="https://github.com/jeypnet/KG5ZZB-Radio-Apps"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/flagship-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/flagship-light.svg"><img src="assets/portfolio-v2/flagship-dark.svg" alt="KG5ZZB SDR Airband Receiver project showcase" width="100%"></picture></a></p>
+
 <p align="center"><a href="https://github.com/jeypnet/KG5ZZB-Radio-Apps"><img src="assets/airband-receiver-hero-v1.png" alt="KG5ZZB SDR Airband Receiver: hear pilots, see the planes, read their messages, with an RTL-SDR dongle" width="100%"></a></p>
 
 A complete aviation radio app for a low-cost RTL-SDR dongle, built end to end in C# / .NET: **an airband scanner with an AI noise filter, a live map of the planes around you from their ADS-B transponders, and the ACARS / VDL2 messages they send, explained in plain English.** It runs offline, from your own antenna.
@@ -51,6 +57,15 @@ A complete aviation radio app for a low-cost RTL-SDR dongle, built end to end in
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg"><img src="assets/divider-dark.svg" alt="" width="100%"></picture></p>
 
 ## RF + AI: software-defined radio projects
+
+<table>
+<tr><td width="50%" align="center"><a href="https://github.com/jeypnet/KG5ZZB-Drone-RF-Detector"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/drone-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/drone-light.svg"><img src="assets/portfolio-v2/drone-dark.svg" alt="Drone RF Detector" width="100%"></picture></a></td>
+<td width="50%" align="center"><a href="https://github.com/jeypnet/KG5ZZB-GNSS-Interference-Monitor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/gnss-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/gnss-light.svg"><img src="assets/portfolio-v2/gnss-dark.svg" alt="GNSS Interference Monitor" width="100%"></picture></a></td></tr>
+<tr><td width="50%" align="center"><a href="https://github.com/jeypnet/KG5ZZB-SCADA-RF-Link-Monitor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/scada-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/scada-light.svg"><img src="assets/portfolio-v2/scada-dark.svg" alt="SCADA RF Link Monitor" width="100%"></picture></a></td>
+<td width="50%" align="center"><a href="https://github.com/jeypnet/KG5ZZB-RF-Signal-Classifier"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/classifier-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/classifier-light.svg"><img src="assets/portfolio-v2/classifier-dark.svg" alt="RF Signal Classifier" width="100%"></picture></a></td></tr>
+<tr><td width="50%" align="center"><a href="https://github.com/jeypnet/KG5ZZB-Spectrum-Anomaly-Detector"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/spectrum-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/spectrum-light.svg"><img src="assets/portfolio-v2/spectrum-dark.svg" alt="Spectrum Anomaly Detector" width="100%"></picture></a></td>
+<td width="50%" align="center"><a href="https://github.com/jeypnet/KG5ZZB-IoT-RF-Inventory"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/iot-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/iot-light.svg"><img src="assets/portfolio-v2/iot-dark.svg" alt="IoT RF Inventory" width="100%"></picture></a></td></tr>
+</table>
 
 Windows apps that turn a low-cost RTL-SDR into a sensor, with **machine learning trained in PyTorch and run on-device with ONNX Runtime** in C# / .NET. Each one is receive-only and ships with a model card that reports measured results against a classical baseline.
 
@@ -84,6 +99,8 @@ The RF + AI repositories are project showcases (description, results, model card
 
 ## How I build
 
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/build-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/build-light.svg"><img src="assets/portfolio-v2/build-dark.svg" alt="How I build: discover, integrate and operate systems" width="100%"></picture></p>
+
 I use an AI-native development process. AI coding agents help produce the code; I own the problem definition, solution design, review, testing, troubleshooting, and completed workflow. Quest's repository explicitly identifies its generated platform output.
 
 - **Discover and explain:** connect customer requirements to a practical workflow, demonstrate the result, and discuss limitations.
@@ -95,6 +112,8 @@ Tools across my work include Claude Code, MCP, PyTorch, ONNX Runtime, C# / .NET 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg"><img src="assets/divider-dark.svg" alt="" width="100%"></picture></p>
 
 ## Industry experience behind the projects
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-v2/experience-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/portfolio-v2/experience-light.svg"><img src="assets/portfolio-v2/experience-dark.svg" alt="Industry experience in AI, technical sales and RF systems" width="100%"></picture></p>
 
 - **JoGo.Team:** customer operations and AI integration for a sports marketplace.
 - **BP3 Global:** enterprise AI and automation sales across banking and manufacturing.

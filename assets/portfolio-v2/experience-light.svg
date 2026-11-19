@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="168" viewBox="0 0 570 168" role="img" aria-label="Experience behind the projects"><title>Experience behind the projects</title><defs>
+<linearGradient id="clbg" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#F8FCFF"/><stop offset="53%" stop-color="#E0F1F9"/><stop offset="100%" stop-color="#F8FCFF"/></linearGradient>
+<radialGradient id="clglow"><stop stop-color="#17B4BF" stop-opacity=".23"/><stop offset="100%" stop-color="#17B4BF" stop-opacity="0"/></radialGradient>
+<linearGradient id="clline"><stop stop-color="#087F9C" stop-opacity=".06"/><stop offset=".5" stop-color="#087F9C" stop-opacity=".8"/><stop offset="1" stop-color="#F08754" stop-opacity=".1"/></linearGradient>
+<pattern id="clgrid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0 H0 V28" fill="none" stroke="#A8CBDC" stroke-width=".7" opacity=".32"/></pattern>
+</defs><rect width="570" height="168" rx="15" fill="url(#clbg)"/><rect width="570" height="168" rx="15" fill="none" stroke="#A8CBDC" stroke-width="2"/><rect x="388" width="182" height="168" fill="url(#clgrid)" opacity=".5"/><ellipse cx="485" cy="64" rx="200" ry="126" fill="url(#clglow)" opacity=".7"/><g transform="translate(64 70)" stroke="#087F9C" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".92"><path d="M-24 22V-12L0 -25L24 -12V22Z M-24 -12L0 1L24 -12 M0 1 V26"/></g>
+<text x="117" y="54" fill="#132943" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" letter-spacing="1">INDUSTRY EXPERIENCE</text>
+<path d="M116 69 H535" stroke="url(#clline)" stroke-width="1.5"/>
+<text x="116" y="103" fill="#47667C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="0">AI solutions  •  Customer success</text><text x="116" y="137" fill="#47667C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="0">RF / SDR  •  Technical sales</text>
+<path d="M17 149H75" stroke="#087F9C" stroke-width="3" opacity=".9"/></svg>
