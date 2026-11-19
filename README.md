@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/header-juan-pablo-pacheco.png" alt="Juan Pablo Pacheco: AI Solutions Engineer. AI agents, MCP and LLM integrations, workflow automation, and RF + AI software-defined radio with on-device machine learning" width="100%"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg"><img src="assets/hero-dark.svg" alt="Juan Pablo Pacheco: AI Solutions Engineer. AI agents, MCP and LLM integrations, workflow automation, and RF + AI software-defined radio with on-device machine learning" width="100%"></picture></p>
 
 <p><img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white"> <img alt="MCP" src="https://img.shields.io/badge/MCP-111827?style=flat-square"> <img alt="LLM APIs" src="https://img.shields.io/badge/LLM%20APIs-6B21A8?style=flat-square"> <img alt="AI Agents" src="https://img.shields.io/badge/AI%20Agents-0E7490?style=flat-square"> <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"> <img alt="ONNX Runtime" src="https://img.shields.io/badge/ONNX%20Runtime-005CED?style=flat-square&logo=onnx&logoColor=white"> <img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white"> <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white"> <img alt="Django" src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"> <img alt="Twilio" src="https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white"> <img alt="Stripe" src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white"> <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white"> <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"> <img alt="SDR / RF" src="https://img.shields.io/badge/SDR%20/%20RF-0F766E?style=flat-square"> <img alt="DSP" src="https://img.shields.io/badge/DSP-334155?style=flat-square"></p>
 
@@ -9,6 +9,8 @@ I turn customer and operational problems into AI integrations, automation, and w
 At [JoGo.Team](https://jogo.team), I build AI capabilities for a sports marketplace. My background in customer success, technical sales, and radio systems helps me connect business needs with implementation and explain the tradeoffs to the people using it.
 
 **Open to remote AI Solutions Engineer, AI Solutions Implementation, and AI Automation roles.** [Connect on LinkedIn](https://www.linkedin.com/in/jeypnet/).
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg"><img src="assets/divider-dark.svg" alt="" width="100%"></picture></p>
 
 ## Start here: problems I solve
 
@@ -31,6 +33,8 @@ At [JoGo.Team](https://jogo.team), I build AI capabilities for a sports marketpl
 
 The repositories include demonstration code and technical utilities. Each README explains its scope and how to inspect it. Synthetic industry examples are not client references; employer experience does not imply deployment of these public projects at those employers or their customers.
 
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg"><img src="assets/divider-dark.svg" alt="" width="100%"></picture></p>
+
 ## ✈ Flagship RF project: KG5ZZB SDR Airband Receiver
 
 <p align="center"><a href="https://github.com/jeypnet/KG5ZZB-Radio-Apps"><img src="assets/airband-receiver-hero-v1.png" alt="KG5ZZB SDR Airband Receiver: hear pilots, see the planes, read their messages, with an RTL-SDR dongle" width="100%"></a></p>
@@ -43,6 +47,8 @@ A complete aviation radio app for a low-cost RTL-SDR dongle, built end to end in
 - RTL-SDR, SDRplay and Airspy receivers · Windows, Mac and Linux.
 
 **[⬇ Download free (Windows)](https://github.com/jeypnet/KG5ZZB-Radio-Apps/releases/latest)** · **[Mac & Linux](https://github.com/jeypnet/KG5ZZB-Radio-Apps#-downloads-for-every-system)** · **[How it works and measured results](https://github.com/jeypnet/KG5ZZB-Radio-Apps)**
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg"><img src="assets/divider-dark.svg" alt="" width="100%"></picture></p>
 
 ## RF + AI: software-defined radio projects
 
@@ -74,6 +80,8 @@ Windows apps that turn a low-cost RTL-SDR into a sensor, with **machine learning
 
 The RF + AI repositories are project showcases (description, results, model card); the source code is private and technical walkthroughs are available on request.
 
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg"><img src="assets/divider-dark.svg" alt="" width="100%"></picture></p>
+
 ## How I build
 
 I use an AI-native development process. AI coding agents help produce the code; I own the problem definition, solution design, review, testing, troubleshooting, and completed workflow. Quest's repository explicitly identifies its generated platform output.
@@ -83,6 +91,8 @@ I use an AI-native development process. AI coding agents help produce the code; 
 - **Operate and improve:** investigate failures, evaluate fallback behavior, and use customer feedback and analytics to guide the next change.
 
 Tools across my work include Claude Code, MCP, PyTorch, ONNX Runtime, C# / .NET (WPF), DSP and RTL-SDR, Anthropic and OpenAI APIs, Python/Django, Twilio, Stripe Connect, SendGrid, Cloudflare, GitHub Actions, Sentry, GA4, and Google Search Console. The projects above show specific slices of that work, not a claim that every tool is implemented in every repository.
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg"><img src="assets/divider-dark.svg" alt="" width="100%"></picture></p>
 
 ## Industry experience behind the projects
 
