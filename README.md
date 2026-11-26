@@ -50,7 +50,7 @@ A complete aviation radio app for a low-cost RTL-SDR dongle, built end to end in
 - **Own RTL-SDR driver** (USB, tuner and PLL control in C#): the scanner checks every channel [almost twice as often as with the free driver](https://github.com/jeypnet/KG5ZZB-Radio-Apps/blob/main/docs/airband-driver.md), with 1000 retunes in a row and no errors.
 - **Own decoders**: ADS-B, ACARS and VDL Mode 2 (D8PSK, Reed–Solomon), all in the app.
 - **AI noise filter** (RNNoise) for weak voices, and **plug and play with two receivers**: the app finds which one hears planes and gives it the map.
-- RTL-SDR, SDRplay and Airspy receivers · Windows, Mac and Linux.
+- RTL-SDR, SDRplay, Airspy and HackRF One (beta) receivers · Windows, Mac and Linux.
 
 **[⬇ Download free (Windows)](https://github.com/jeypnet/KG5ZZB-Radio-Apps/releases/latest)** · **[Mac & Linux](https://github.com/jeypnet/KG5ZZB-Radio-Apps#-downloads-for-every-system)** · **[How it works and measured results](https://github.com/jeypnet/KG5ZZB-Radio-Apps)**
 
